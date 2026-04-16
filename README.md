@@ -12,9 +12,20 @@
 | 파일 | 내용 |
 |------|------|
 | [`TUTORIAL_KR.md`](TUTORIAL_KR.md) | 본편 — 환경 점검부터 ROS 2 Docker, PyBullet, 클라우드 Isaac Sim, 통합 예제까지 |
+| [`notebooks/`](notebooks/) | **Google Colab 노트북 3종** (설치 제로, 브라우저만으로 체험) |
 | [`examples/ros2_pubsub/`](examples/ros2_pubsub/) | 최소 Python ROS 2 publisher/subscriber 쌍 |
 | [`examples/pybullet_arm/`](examples/pybullet_arm/) | Franka Panda 팔을 PyBullet 으로 로드하는 최소 스크립트 |
 | [`examples/ros2_pybullet_bridge/`](examples/ros2_pybullet_bridge/) | ROS 2 토픽 ↔ PyBullet 시뮬레이션 브리지 데모 |
+
+### 🚀 Google Colab 바로 열기
+
+| # | 주제 | Colab |
+|---|------|-------|
+| 01 | **PyBullet Panda** — GIF 애니메이션 + IK + 관절 궤적 플롯 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leonyoon-3dai/isaac_ros2_mac/blob/main/notebooks/01_pybullet_panda.ipynb) |
+| 02 | **ROS 2 rclpy** — Humble 설치 + pub/sub + 토픽 시각화 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leonyoon-3dai/isaac_ros2_mac/blob/main/notebooks/02_ros2_rclpy.ipynb) |
+| 03 | **ROS 2 × PyBullet 브리지** — 명령/실측 비교 + 카메라 GIF | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leonyoon-3dai/isaac_ros2_mac/blob/main/notebooks/03_ros2_pybullet_bridge.ipynb) |
+
+> 💡 Colab 은 Ubuntu 22.04 + GPU(옵션) 환경이라 **설치 제로** 로 ROS 2 + PyBullet 을 바로 써 볼 수 있습니다. Mac 로컬 세팅 없이 개념부터 체험하고 싶을 때 최적.
 
 ## 🎯 60초 요약
 

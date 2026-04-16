@@ -4,6 +4,7 @@
 
 ## 목차
 
+- [🚀 바로 해보기 — Google Colab 노트북](#-바로-해보기--google-colab-노트북)
 - [0. 시작 전 — 솔직한 현실 체크](#0-시작-전--솔직한-현실-체크)
 - [1. 공통 준비물 (Homebrew · XQuartz · Docker · Python)](#1-공통-준비물-homebrew--xquartz--docker--python)
 - [2. Track A — ROS 2 Jazzy를 Docker로 실행하기](#2-track-a--ros-2-jazzy를-docker로-실행하기)
@@ -15,6 +16,20 @@
 - [8. 다음 단계 — 추천 학습 로드맵](#8-다음-단계--추천-학습-로드맵)
 - [9. 트러블슈팅 FAQ](#9-트러블슈팅-faq)
 - [10. 참고 자료](#10-참고-자료)
+
+---
+
+## 🚀 바로 해보기 — Google Colab 노트북
+
+Mac 에 아무것도 설치하기 전에 **브라우저만으로** 감을 잡고 싶으시다면 Colab 노트북을 먼저 눌러 보세요. Intel Mac / GPU 여부 / macOS 버전과 **무관하게** 누구나 동일하게 실행됩니다.
+
+| # | 주제 | Colab | 결과물 |
+|---|------|-------|--------|
+| 01 | **PyBullet Panda** (물리 · 렌더 · IK) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leonyoon-3dai/isaac_ros2_mac/blob/main/notebooks/01_pybullet_panda.ipynb) | 관절 궤적 GIF, 각도 플롯 |
+| 02 | **ROS 2 rclpy** (Humble 설치 · pub/sub) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leonyoon-3dai/isaac_ros2_mac/blob/main/notebooks/02_ros2_rclpy.ipynb) | 토픽 시계열 matplotlib |
+| 03 | **작은 Isaac Sim** (ROS 2 ↔ PyBullet) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/leonyoon-3dai/isaac_ros2_mac/blob/main/notebooks/03_ros2_pybullet_bridge.ipynb) | 명령 vs 실측 비교 플롯 + 카메라 GIF |
+
+> 📝 Colab 노트북은 ROS 2 **Humble** (Ubuntu 22.04 짝) 을 씁니다. 아래 Mac 튜토리얼은 **Jazzy** (Docker) 를 씁니다. rclpy 레벨 코드는 호환되니 노트북에서 익힌 개념을 Mac Docker 에서 그대로 써 먹을 수 있어요.
 
 ---
 

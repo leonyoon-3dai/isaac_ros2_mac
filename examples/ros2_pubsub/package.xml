@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_py_pkg</name>
+  <version>0.0.1</version>
+  <description>Intel Mac + Docker ROS 2 Jazzy pub/sub 최소 예제</description>
+  <maintainer email="leonyoon@gmail.com">leonyoon</maintainer>
+  <license>Apache-2.0</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

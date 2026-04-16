@@ -59,4 +59,4 @@
 
 - 본 리포는 NVIDIA 공식 자료가 아닌 개인 학습용 비공식 요약입니다.
 - 모든 스크린샷/다이어그램은 각 프로젝트의 공식 문서·위키피디아·아이콘 CDN 을 인용합니다.
-- 기준일: **2026-04-16** · ROS 2 Jazzy, Gazebo Harmonic, Isaac Sim 5.x 시점.
+- 기준일: **2026-04-17** · ROS 2 Jazzy, Gazebo Harmonic, Isaac Sim 5.x 시점.

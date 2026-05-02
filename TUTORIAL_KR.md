@@ -313,8 +313,14 @@ class MinimalPublisher(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    rclpy.spin(MinimalPublisher())
-    rclpy.shutdown()
+    node = MinimalPublisher()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == "__main__":
@@ -344,8 +350,14 @@ class MinimalSubscriber(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    rclpy.spin(MinimalSubscriber())
-    rclpy.shutdown()
+    node = MinimalSubscriber()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 ```
 
 ### 4.4 빌드 & 실행
@@ -527,10 +539,16 @@ class PandaSimBridge(Node):
         self.pub.publish(js)
 
 
-def main():
+def main() -> None:
     rclpy.init()
-    rclpy.spin(PandaSimBridge())
-    rclpy.shutdown()
+    node = PandaSimBridge()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == "__main__":
